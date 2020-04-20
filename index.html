@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+	<title>Project2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/W3.css">
+	<link rel="stylesheet" type="text/css" href="PAGE/main.css">
+	
+
+    <link rel="stylesheet" href="PAGE/css/bootstrap.css">
+    <link rel="stylesheet" href="PAGE/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="PAGE/css/bootstrap-reboot.css">
+<!--===============================================================================================-->
+</head>
+
+<body>
+	<!--  main page   --> 
+	<div class='main'>
+		
+			<div class='header'>
+				<input class='log' type='button' Value='Sign In'>
+			</div>
+			<div class="w3-content w3-display-container">
+			
+			<div class="w3-display-container mySlides">
+			  <img src="images/RBK.jpg" style="width:100%">
+			</div>
+			
+			<div class="w3-display-container mySlides">
+			  <img src="images/RBK2.jpg" style="width:100%">
+			</div>
+			
+			<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+			
+			</div>
+			
+		  <input type='button' id='scroller' value='     '>
+		  <div id='scroll'>
+			
+			  <table style='width:100%; height:100%'>
+				<tr style='width:100%; height:20%;'>
+					<td style='width:100%'>
+							<p class='welcome'>Welcome To RBK Family!</p>
+					</td>
+				</tr>
+				<tr style='height:99%'>
+					<td id='logo'>
+						<p class='welcome'>On Our website you can:</p>
+						<ul id='list'><li id='it'>Talk with your Classmates!</li><li id='it'>Check Your Absence</li><li id='it'>Send Private Messages!</li></ul>
+					</td>
+					<td style='width:80'></td>
+				</tr>
+			  </table>
+		  </div>	
+			
+	</div>
+	<!--  login page   --> 
+	<div class="limiter">
+		<img id='home' src='images/home.jpg' style='width:50px; height:50px; margin-top:0; margin-left:0;'>
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+						Welcome To Our Website!
+					</span>
+					<span class="login100-form-title p-b-48">
+						<img src='PAGE/rbk1.png' style='width:180px; height:80px;'>
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Invalid password">
+						<input class="input100" id="id" type="text" name="email">
+						<span class="focus-input100" data-placeholder="ID"></span>
+					</div>
+					<p id='err'></p>
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" id="pass" type="password" name="pass">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button id='logg' class="login100-form-btn">
+								Login
+							</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+<!--   NOUHAAA-->
+	<div class="container-fluid px-0" style='display:none'>
+        <div class="row no-gutters min-vh-100">
+            
+            <div class="col-sm-2 bg-dark flex-grow-1 " id="sidebar">
+                <!--animation button-->     
+                <div id="collapseBotton" ><i class="fas fa-bars"></i><!--div id="menuButton"></div--></div>
+               <!--LOGO-->
+                <img src="PAGE/rbk2.png" width="100%" id="barLogo">
+                
+                <div class="py-2 sticky-top flex-grow-1" id="main_left">
+                    <div class="nav flex-sm-column flex-no-wrap align-items-center align-items-sm-start pt-2" id="studentsBar">
+                        <!--Students' list Div-->
+                        
+                    </div>
+                </div>
+            </div>
+            
+ 
+            
+            <div class="col p-4" id="rightSide">
+                <!--HELLO USER -->
+                <div class="row align-items-center" id="profileDiv" style="background-color:transparent">
+                    
+                    <div class="col-sm-3"  style="background-color: white;" id="idendityDiv"></div>
+                    <div class="col-md-4"  style="background-color: white;" id="absencesDiv"></div>
+                    <div class="col-sm-4"  style="background-color:white;" id="RemarquesDiv">
+                        
+                                <textarea disabled id="textRemarques"></textarea>
+                                <table>
+                                    <tr>
+                                      <th>
+                                        <textarea id="newRemarque" ></textarea>
+                                      </th>
+                                      <th>
+                                        <button id='remarqueButton'>send</button>
+                                    </th>
+                                    </tr>
+                                </table>
+					</div>
+                    
+                    <!--div class="row">bb
+                    </div>
+                    <div class="w-100 my-3">cc</div>
+                    <div class="col-auto">dd
+                    </div>
+                    <div class="col">ee
+                    </div-->
+                    
+                    
+				</div>
+				
+
+				<div class="row align-items-center" id="chatRoom" style="background-color:transparent">
+                    
+					<div class="col-sm-4"  style="background-color:white;" id="chatroomDiv">
+						<p id='userName'>Welcome To The Chat Room!</p>
+                                <textarea disabled class='roommessages' id="chatMessages" style='width:900px'></textarea>
+                                <table>
+                                    <tr>
+                                      <th>
+                                        <textarea class='roomText' id="newRemarque" style='width:65%'></textarea>
+                                      </th>
+                                      <th>
+                                        <button class='room' id='remarqueButton'>send</button>
+                                    </th>
+                                    </tr>
+                                </table>
+					</div>
+                    
+                    <!--div class="row">bb
+                    </div>
+                    <div class="w-100 my-3">cc</div>
+                    <div class="col-auto">dd
+                    </div>
+                    <div class="col">ee
+                    </div-->
+                    
+                    
+                </div>
+                <!--p class="lead mt-5" style="background-color: darkgoldenrod;">What yo say?</p-->
+            </div>
+		</div>
+	</div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<!-- <script src="js/main.js"></script> -->
+	<script type="text/javascript" src="PAGE/database3.js"></script>
+	<script type="text/javascript" src="js/project.js"></script>
+	<script src="PAGE/js/bootstrap.js"></script>
+    <script src="PAGE/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
